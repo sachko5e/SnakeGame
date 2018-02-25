@@ -1,0 +1,60 @@
+<html>
+<head>
+  <title>Snake Game</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <style>
+    #root {
+      width: 400px;
+      height: 400px;
+      position: relative;
+      background: yellow;
+      border: 1px solid #000080;
+    }
+    .snBlock {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      background-color: red;
+      border: 1px solid #FFFFFF;
+      color: #FFFFFF;
+      font-size: 10px;
+      text-align: center;
+      vertical-align: middle;
+    }
+    .snFoodClass {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      background-color: green;
+      color: #FFFFFF;
+      font-size: 10px;
+      text-align: center;
+      vertical-align: middle;
+    }
+    .text {
+      font: 600 0.5em/1 'Raleway', sans-serif;
+    }
+    .logo {
+      font: 600 1.0em/1 'Raleway', sans-serif;
+      color: rgba(0, 0, 0, .5);
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      left: 150px;
+      top: 130px;
+      width: 200px;
+      position: relative;
+      z-index: 100000;
+    }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div id="help" class="logo">Welcome to Snake Game!<br>
+      <div class="text">Click on the yellow space and Use <b>Arrow keyboard Keys</b> to start and direct the snake.<br> Your goal is to eat as much food as you can without touching the borders of the game field or the snake tail. Good luck!
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="snake.js"></script>
+</body>
+</html>
